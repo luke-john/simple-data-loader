@@ -1,0 +1,37 @@
+{
+    "compilerOptions": {
+        "removeComments": false,
+        "sourceMap": true,
+        "inlineSourceMap": true,
+        "noImplicitAny": true,
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "noEmitOnError": true,
+        "target": "es5",
+        "jsx": "react",
+        "strictNullChecks": true,
+        "noImplicitReturns": true,
+        "allowSyntheticDefaultImports": false,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "declaration": true,
+        "paths": {},
+        "baseUrl": ".",
+        "lib": [
+            "dom",
+            "es5"
+        ],
+        "outDir": "../build"
+    },
+    "include": [
+        "**/*.d.ts",
+        "**/*.ts",
+        "**/*.tsx"
+    ],
+    "exclude": [
+        // "src/testsd",
+        "../node_modules",
+        "tests",
+        "examples"
+    ]
+}

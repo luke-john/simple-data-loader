@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`dataLoader with single resource Should render is error if api failure 1`] = `"<p><!-- react-text: 2 -->Error: <!-- /react-text --><!-- react-text: 3 -->Unexpected API response<!-- /react-text --></p>"`;
+
+exports[`dataLoader with single resource Should render loading and loaded onMounted 1`] = `"<p>Loading</p>"`;
+
+exports[`dataLoader with single resource Should render loading and loaded onMounted 2`] = `"<p><!-- react-text: 2 -->Loaded: <!-- /react-text --><!-- react-text: 3 -->{\\"key\\":\\"value\\"}<!-- /react-text --></p>"`;

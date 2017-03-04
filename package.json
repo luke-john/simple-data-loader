@@ -1,0 +1,53 @@
+{
+    "name": "data-loader",
+    "version": "0.0.1",
+    "main": "build/index.js",
+    "files": [
+        "build"
+    ],
+    "license": "MIT",
+    "engines": {
+        "node": "7.7.1"
+    },
+    "author": "Luke John <data-loader@lukejohn.me> (https://github.com/luke-john)",
+    "keywords": [
+        "typescript",
+        "react"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/luke-john/data-loader.git"
+    },
+    "bugs": {
+        "url": "https://github.com/luke-john/data-loader/issues"
+    },
+    "homepage": "https://github.com/luke-john/data-loader#readme",
+    "scripts": {
+        "prepublish": "npm run build",
+        "prebuild": "./node_modules/.bin/rimraf build",
+        "build": "tsc -p ./src",
+        "install": "npm run build",
+        "lint": "tslint \"./src/**/**.ts?(x)\"",
+        "test": "jest --config jest-config.json"
+    },
+    "peerDependencies": {
+        "react": "^15.4.2"
+    },
+    "devDependencies": {
+        "@types/enzyme": "^2.7.5",
+        "@types/jest": "^18.1.1",
+        "@types/react": "^15.0.14",
+        "@types/react-dom": "^0.14.23",
+        "enzyme": "^2.7.1",
+        "fetch-mock": "^5.9.4",
+        "jest": "^19.0.2",
+        "react": "^15.4.2",
+        "react-addons-test-utils": "^15.4.2",
+        "react-dom": "^15.4.2",
+        "rimraf": "^2.6.1",
+        "ts-jest": "^19.0.0",
+        "tslint": "^4.5.1",
+        "tslint-react": "^2.4.0",
+        "typescript": "^2.2.1"
+    }
+}

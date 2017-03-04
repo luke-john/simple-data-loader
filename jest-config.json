@@ -1,0 +1,25 @@
+{
+    "roots": [
+        "./src/tests"
+    ],
+    "globals": {
+        "__TS_CONFIG__": "./src/tests/tsconfig.json"
+    },
+    "setupTestFrameworkScriptFile": "<rootDir>/scripts/setup-tests.js",
+    "transform": {
+        ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx)$",
+    "testPathIgnorePatterns": [
+        "/node_modules/",
+        "/build/"
+    ],
+    "moduleFileExtensions": [
+        "ts",
+        "tsx",
+        "js"
+    ],
+    "moduleNameMapper": {
+        "\\.scss$": "<rootDir>/__mocks__/styleMock.js"
+    }
+}
